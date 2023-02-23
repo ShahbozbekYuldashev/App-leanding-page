@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metas -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Logovski" />
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- Document Title -->
+    <title>Bondi</title>
+  </head>
+  <body data-spy="scroll" data-offset="120"> 
+    <!-- Loading Icon While Page Loads -->
+    <div class="spinner-overlay flex-center">
+      <div class="spinner-grow flex-center" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>      
+    </div>
+  
+    <!-- Start of header -->
+    <header id="home">
+      <nav class="navbar bg-white navbar-expand-md fixed-top padding-25-15">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+            <!-- logo brand image -->
+            <img src="images/logo.svg" alt="">
+          </a>
+          <!-- Mobile Burger Button  -->
+          <div class="mobile-menu right none">
+            <div class="burger pointer relative">
+              <span class=""></span>
+            </div>
+          </div>
+          <!-- Desktop Navigation -->
+          <div class="navbar-collapse collapse desktop-navbar">
+            <ul class="navbar-nav ml-auto nav-pills">
+              <!-- Navigation link -->
+              <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+              </li>
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>  
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>  
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>    
+              <!-- Dropdown link -->
+              <li class="dropdown">
+                <button class="dropdown-btn-style weight500 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bonus
+                </button>
+                <div class="dropdown-menu animated flipInX bg-white light-shadow">
+                  <a class="dropdown-item color-primary weight500" href="../Bonus-Pages/blog-single.html">Single Blog</a>
+                  <a class="dropdown-item color-primary weight500" href="../Bonus-Pages/portfolio-single.html">Single Portfolio</a>
+                  <a class="dropdown-item color-primary weight500" href="../Bonus-Pages/coming-soon.html">Coming Soon</a>
+                  <a class="dropdown-item color-primary weight500" href="../Bonus-Pages/coming-soon-v2.html">Coming Soon v.2</a>
+                  <a class="dropdown-item color-primary weight500" href="../Bonus-Pages/404.html">404 v.1</a>
+                  <a class="dropdown-item color-primary weight500" href="../Bonus-Pages/404v2.html">404 v.2</a>
+                  <a class="dropdown-item color-primary weight500" href="../App-Landing-Page-1/index.html">App Showcase #1</a>
+                  <a class="dropdown-item color-primary weight500" href="../App-Landing-Page-2/index.html">App Showcase #2</a>
+                  <a class="dropdown-item color-primary weight500" href="../App-Landing-Page-3/index.html">App Showcase #3</a>
+                  <a class="dropdown-item color-primary weight500" href="../Portfolio-Landing-Page-1/index.html">Portfolio #1</a>
+                  <a class="dropdown-item color-primary weight500" href="../Portfolio-Landing-Page-2/index.html">Portfolio #2</a>
+                  <a class="dropdown-item color-primary weight500" href="../Portfolio-Multipage/index.html">Portfolio #3</a>
+                </div>
+              </li>        
+            </ul>
+          </div>
+          <!-- Mobile Navigation -->
+          <div class="navbar-collapse sidenav bg-white light-shadow">
+            <ul class="navbar-nav ml-auto nav-pills">
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link font-size-20" href="#home">Home</a>
+              </li>
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link font-size-20" href="#features">Features</a>
+              </li>
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link font-size-20" href="#about">About Us</a>
+              </li>
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link font-size-20" href="#blog">Blog</a>
+              </li>  
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link font-size-20" href="#pricing">Pricing</a>
+              </li>  
+              <!-- Navigation link -->
+              <li class="nav-item">
+                <a class="nav-link font-size-20" href="#contact">Contact</a>
+              </li>   
+              <!-- Dropdown link -->
+              <li class="dropdown">
+                <button class="dropdown-btn-style dropdown-mobile-style weight500 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bonus
+                </button>
+                <div class="dropdown-menu dropdown-mobile animated flipInX bg-white">
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Bonus-Pages/blog-single.html">Single Blog</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Bonus-Pages/portfolio-single.html">Single Portfolio</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Bonus-Pages/coming-soon.html">Coming Soon</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Bonus-Pages/coming-soon-v2.html">Coming Soon v.2</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Bonus-Pages/404.html">404 v.1</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Bonus-Pages/404v2.html">404 v.2</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../App-Landing-Page-1/index.html">App Showcase #1</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../App-Landing-Page-2/index.html">App Showcase #2</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../App-Landing-Page-3/index.html">App Showcase #3</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Portfolio-Landing-Page-1/index.html">Portfolio #1</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Portfolio-Landing-Page-2/index.html">Portfolio #2</a>
+                  <a class="dropdown-item color-primary weight500 font-size-20" href="../Portfolio-Multipage/index.html">Portfolio #3</a>
+                </div>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- header hero -->
+      <div class="hero bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="hero-title margin-20-0 wow fadeInLeft">
+                <!-- header hero title -->
+                <h1>Enter Mobile World Like A Hero!!!</h1>
+                <p>Duis aute irure <a href="#">dolor in reprehenderit</a> in voluptate<br>velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="store-buttons">
+                  <a href="#"><img src="images/app-store-btn.svg" alt=""></a>
+                  <a href="#"><img src="images/play-store-btn.svg" alt=""></a>
+                </div>
+                <p>Want to see more? <a href="#">See our features.</a></p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!-- header hero images -->
+              <div class="hero-image flex-center relative">
+                <div class="hero-layer1">
+                  <img class="wow fadeInRightBig" data-wow-delay="0.5s" src="images/hero/hero-colorful-rows.svg" alt="">
+                </div>
+                <div class="hero-layer2">
+                  <!-- header hero screenshot -->
+                  <img class="wow fadeInRightBig shadow" data-wow-delay="1s" src="images/advertisings/screenshot1.png" alt="">
+                </div>
+                <div class="hero-layer3">
+                  <img class="wow fadeInRightBig" data-wow-delay="1.5s" src="images/hero/hero-device.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Start of Showcase  -->
+    <section id="features" class="showcase bg-secondary-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <div class="showcase-box margin-top-15">
+              <!-- Stats  -->
+              <p class="weight600">4.8</p>
+              <div class="showcase-stars padding-15-0">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+              </div>
+              <!-- Stats title  -->
+              <p>3,421 Ratings</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="showcase-box margin-top-15">
+              <!-- Stats  -->
+              <p class="weight600">A+</p>
+              <div class="showcase-stars padding-15-0">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+              </div>
+              <!-- Stats title  -->
+              <p>78 Customer reviews</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 showcase-text">
+            <!-- Stats Info -->
+            <h4>Create Best App<br>Presentation</h4>
+            <p class="padding-top-20">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Start of Features  -->
+    <section class="features bg-white">
+      <div class="container">
+        <div class="row">
+          <!-- Feature Title  -->
+          <div class="col-12 features-title text-center wow fadeIn">
+            <h5 class="font-size-20">Features</h5>
+            <h4>Standout From The Crowd</h4>
+          </div>
+        </div>
+        <div class="row">
+          <!-- First Feature  -->
+          <div class="col-12 col-md-4">
+            <div class="feature-box text-center wow fadeInLeft" data-wow-delay="0.3s">
+              <h5>Pixel Perfect</h5>
+              <div class="feature-icon flex-center relative center">
+                <div class="feature-img-box light-shadow bg-white flex-center">
+                  <img src="images/services/service-icon1.svg" alt="">
+                </div>
+              </div>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+          </div>
+          <!-- Second Feature  -->
+          <div class="col-12 col-md-4">
+            <div class="feature-box text-center wow fadeIn" data-wow-delay="0.6s">
+              <h5>Modern & Clean</h5>
+              <div class="feature-icon flex-center relative center">
+                <div class="feature-img-box light-shadow bg-white flex-center">
+                  <img src="images/services/service-icon2.svg" alt="">
+                </div>
+              </div>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+          </div>
+          <!-- Third Feature  -->
+          <div class="col-12 col-md-4">
+            <div class="feature-box text-center wow fadeInRight" data-wow-delay="0.3s">
+              <h5>Easy To Edit</h5>
+              <div class="feature-icon flex-center relative center">
+                <div class="feature-img-box light-shadow bg-white flex-center">
+                  <img src="images/services/service-icon3.svg" alt="">
+                </div>
+              </div>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Start of Advertising  -->
+    <section class="advertisings bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+           <!-- Advertising image -->
+            <div class="advertising-image relative margin-20-0">
+              <div class="advertising-image relative">
+                <div class="advertising-image-box center relative">
+                  <!-- Advertising Screenshot image -->
+                  <img class="wow fadeInLeftBig deep-shadow" data-wow-delay="1s" src="images/advertisings/screenshot2.png" alt="">
+                </div>
+                <img class="advertising-colorful-rows  wow fadeInLeftBig" data-wow-delay="0.5s" src="images/advertisings/colorful-rows.svg" alt="">
+              </div>
+            </div>
+          </div>  
+          <div class="col-12 col-lg-6">
+            <div class="advertising-info wow fadeInRight">
+              <!-- Advertising title -->
+              <h2>Create Best App Presentation</h2>
+              <div class="margin-20-0">
+                <!-- Advertising info -->
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                <p>Ut laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>    
+                <p>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duit in voluptate velit esse.</p>              
+              </div>
+              <!-- Advertising buttons -->
+              <div class="store-buttons">
+                <a href="#"><img src="images/app-store-btn.svg" alt=""></a>
+                <a href="#"><img src="images/play-store-btn.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Start of About Us  -->
+    <section id="about" class="about bg-light-color">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-12 col-lg-6">
+            <div class="about-info wow fadeInLeft">
+              <!-- About us info -->
+              <h5 class="font-size-20">About Us</h5>
+              <h4>Who We Are?</h4>
+              <p class="margin-30-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+              <div class="stats-container">
+                <!-- Stats Box -->
+                <div class="stats-box text-center left">
+                  <p class="weight500 color-pink">1M+</p>
+                  <p class="weight500">Downloads</p>
+                </div>
+                <!-- Stats Box -->
+                <div class="stats-box text-center left">
+                  <p class="weight500 color-blue">16</p>
+                  <p class="weight500">Employees</p>
+                </div>
+                <!-- Stats Box -->
+                <div class="stats-box text-center left">
+                  <p class="weight500 color-yellow">12</p>
+                  <p class="weight500">Apps</p>
+                </div>
+              </div>
+              <!-- Button -->
+              <div class="button-style-color margin-30-0">
+                <a href="#" class="weight600">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="about-image relative">
+              <!-- About image -->
+              <img class="wow fadeInRightBig" data-wow-delay="0.7s" src="images/about/about-image1.svg" alt="">
+              <img class="wow fadeInRightBig" data-wow-delay="1.1s" src="images/about/about-image2.svg" alt="">
+              <img class="wow fadeInRightBig" data-wow-delay="1.5s" src="images/about/about-image3.svg" alt="">
+              <img class="wow fadeInRightBig" data-wow-delay="1.9s" src="images/about/about-image4.svg" alt="">
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Start of Advertising  -->
+    <section class="advertisings bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="wow fadeInLeft" data-wow-delay="0.4s">
+              <!-- advertising info -->
+              <div class="advertising-row">
+                <!-- Advertising service box -->
+                <div class="advertising-icon-box left">
+                  <img src="images/services/service-icon1.svg" alt="">
+                  <h5>Pixel Perfect</h5>
+                  <p>Duis aute irure dolor in reprehen deritin voluptate esse cillum.</p>
+                </div>
+                <!-- Advertising service box -->
+                <div class="advertising-icon-box left">
+                  <img src="images/services/service-icon2.svg" alt="">
+                  <h5>Modern & Clean</h5>
+                  <p>Duis aute irure dolor in reprehen deritin voluptate esse cillum.</p>
+                </div>                  
+              </div>
+              <div class="advertising-row">
+                <!-- Advertising service box -->
+                <div class="advertising-icon-box left">
+                  <img src="images/services/service-icon3.svg" alt="">
+                  <h5>Easy To Edit</h5>
+                  <p>Duis aute irure dolor in reprehen deritin voluptate esse cillum.</p>
+                </div>
+                <!-- Advertising service box -->
+                <div class="advertising-icon-box left">
+                  <img src="images/services/service-icon4.svg" alt="">
+                  <h5>Organised Files</h5>
+                  <p>Duis aute irure dolor in reprehen deritin voluptate esse cillum.</p>
+                </div>                  
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 advertise-second-style">
+            <div class="advertising-image">
+              <div class="advertising-image-box relative center">
+                <!-- Advertising Screenshot image -->
+                <img class="wow fadeInRightBig deep-shadow" data-wow-delay="0.8s" src="images/advertisings/screenshot3.png" alt="">
+              </div>
+              <img class="advertising-grid wow fadeInRightBig" data-wow-delay="1.3s" src="images/grid-dots.svg" alt="">
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Start of Testimonials  -->
+    <section class="testimonials bg-secondary-color">
+      <div class="container">
+        <div class="row">
+          <!-- testimonials Title  -->
+          <div class="col-12 features-title testimonial-title text-center wow fadeInDown">
+            <h5 class="font-size-20">Testimonials</h5>
+            <h4>What They Say About Us</h4>
+          </div>
+        </div>
+        <div class="testimonials-slider pointer">
+          <!-- testimonials Box  -->
+          <div class="col-12 testimonials-box">
+            <div class="testimonial-avatar left flex-center">
+              <div class="avatar-image shadow">
+                <!-- testimonials Avatar  -->
+                <img src="images/testimonials/avatar1.png" alt="">
+              </div>
+              <img src="images/testimonials/testimonials-bg.svg" alt="">
+            </div>
+            <div class="testimonial-info left">
+              <!-- testimonials Quote  -->
+              <p class="margin-0">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse."</p>
+              <div class="testimonials-stars showcase-stars">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+              </div>
+              <!-- testimonials Author  -->
+              <p class="weight500 margin-0 clear-both">John Doe</p>
+            </div>
+          </div>
+          <!-- testimonials Box  -->
+          <div class="col-12 testimonials-box">
+            <div class="testimonial-avatar left flex-center">
+              <div class="avatar-image shadow">
+                <!-- testimonials Avatar  -->
+                <img src="images/testimonials/avatar2.png" alt="">
+              </div>
+              <img src="images/testimonials/testimonials-bg.svg" alt="">
+            </div>
+            <div class="testimonial-info left">
+              <!-- testimonials Quote  -->
+              <p class="margin-0">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              <div class="testimonials-stars showcase-stars">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+              </div>
+              <!-- testimonials Author  -->
+              <p class="weight500 margin-0 clear-both">Lorem Ipsum</p>
+            </div>
+          </div>
+          <!-- testimonials Box  -->
+          <div class="col-12 testimonials-box">
+            <div class="testimonial-avatar left flex-center">
+              <div class="avatar-image shadow">
+                <!-- testimonials Avatar  -->
+                <img src="images/testimonials/avatar3.png" alt="">
+              </div>
+              <img src="images/testimonials/testimonials-bg.svg" alt="">
+            </div>
+            <div class="testimonial-info left">
+              <!-- testimonials Quote  -->
+              <p class="margin-0">"Ullamcorper sit amet risus nullam eget. Duis tristique sollicitudin nibh sit amet. Placerat orci nulla pellentesque dignissim enim sit."</p>
+              <div class="testimonials-stars showcase-stars">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+              </div>
+              <!-- testimonials Author  -->
+              <p class="weight500 margin-0 clear-both">Luke Skywalker</p>
+            </div>
+          </div>          
+   
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Start of Advertising  -->
+    <section class="advertisings bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="advertising-image relative margin-20-0">
+              <div class="advertising-image-box relative center">
+                <!-- Advertising Screenshot image -->
+                <img class="wow fadeInLeftBig deep-shadow" data-wow-delay="0.4s" src="images/advertisings/screenshot4.png" alt="">
+              </div>
+              <img class="advertising-grid wow fadeInLeftBig" data-wow-delay="0.8s" src="images/grid-dots.svg" alt="">
+            </div>
+          </div>  
+          <div class="col-12 col-lg-6">
+            <div class="advertising-info wow fadeInRight">
+              <!-- advertising title -->
+              <h2>Stand Out From The Crowd</h2>
+              <div class="margin-20-0">
+                <!-- advertising info -->
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                <p>Ut laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>    
+                <p>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duit in voluptate velit esse.</p>              
+              </div>
+              <!-- Button -->
+              <div class="simple-btn">
+                <a class="weight600" href="#">- Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Start of Advertising  -->
+    <section class="advertisings advertisings-style-3 bg-secondary-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="advertising2-image relative">
+              <div class="advertising-box advertising-box1 bg-white text-center wow fadeInLeftBig" data-wow-delay="0.4s">
+                <!-- Advertising image  -->
+                <img src="images/advertisings/add1.png" alt="">
+              </div>
+              <!-- Advertising stats  -->
+              <div class="advertising-box advertising-box2 text-center wow fadeInLeftBig" data-wow-delay="0.7s">
+                <p class="color-white weight500">12</p>
+                <p class="color-white weight500">Apps</p>
+              </div>
+              <!-- Advertising stats  -->
+              <div class="advertising-box advertising-box2 advertising-box3 text-center wow fadeInLeftBig" data-wow-delay="1s">
+                <p class="color-white weight500">16</p>
+                <p class="color-white weight500">Employees</p>
+              </div>
+              <!-- Advertising stats  -->
+              <div class="advertising-box advertising-box4 bg-color-pink text-center wow fadeInLeftBig" data-wow-delay="1.3s">
+                <p class="color-white weight500">1M +</p>
+                <p class="color-white weight500">Downloads</p>
+              </div>
+            </div>
+          </div>  
+          <!-- Advertising info  -->
+          <div class="col-12 col-lg-6 advertising2-info wow fadeInRight" data-wow-delay="0.4s">
+            <h2>Create Best App Presentation</h2>
+            <div class="margin-20-0">
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>         
+            </div>
+            <!-- Button -->
+            <div class="button-style-color button-style2-color margin-30-0">
+              <a href="#" class="weight600">Download App</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Start of Blog  -->
+    <section id="blog" class="features bg-white">
+      <div class="container">
+        <div class="row">
+          <!-- Feature Title  -->
+          <div class="col-12 features-title blog-title text-center wow fadeInDown">
+            <h5 class="font-size-20">Blog</h5>
+            <h4>Some News From Us</h4>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Blog Box  -->
+          <div class="col-12 col-lg-4 blog-box-style wow fadeInLeftBig">
+            <a href="#">
+              <div class="blog-box animate light-shadow relative">
+                <div class="blog-author">
+                  <div class="blog-avatar left">
+                    <!-- Author Avatar Image  -->
+                    <img src="images/blog/avatar1.png" alt="">
+                  </div>
+                  <div class="blog-author-info left">
+                    <!-- Author Name  -->
+                    <p class="font-size-20 weight500">John Doe</p>
+                    <!-- Post Date  -->
+                    <p class="weight400">12 Dec 2019</p>
+                  </div>
+                </div>
+                <div class="blog-text">
+                  <!-- Post Title  -->
+                  <h5 class="weight500 font-size-20 margin-5-0">Show your blog article</h5>
+                  <!-- Post Description  -->
+                  <p class="weight400">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Blog Box  -->
+          <div class="col-12 col-lg-4 blog-box-style wow fadeIn" data-wow-delay="0.4s">
+            <a href="#">
+              <div class="blog-box animate light-shadow relative">
+                <div class="blog-author">
+                  <div class="blog-avatar left">
+                    <!-- Author Avatar Image  -->
+                    <img src="images/blog/avatar2.png" alt="">
+                  </div>
+                  <div class="blog-author-info left">
+                    <!-- Author Name  -->
+                    <p class="font-size-20 weight500">John Doe</p>
+                    <!-- Post Date  -->
+                    <p class="weight400">12 Dec 2019</p>
+                  </div>
+                </div>
+                <div class="blog-text">
+                  <!-- Post Title  -->
+                  <h5 class="weight500 font-size-20 margin-5-0">Show your blog article</h5>
+                  <!-- Post Description  -->
+                  <p class="weight400">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Blog Box  -->
+          <div class="col-12 col-lg-4 blog-box-style wow fadeInRightBig">
+            <a href="#">
+              <div class="blog-box animate light-shadow relative">
+                <div class="blog-author">
+                  <div class="blog-avatar left">
+                    <!-- Author Avatar Image  -->
+                    <img src="images/blog/avatar3.png" alt="">
+                  </div>
+                  <div class="blog-author-info left">
+                    <!-- Author Name  -->
+                    <p class="font-size-20 weight500">John Doe</p>
+                    <!-- Post Date  -->
+                    <p class="weight400">12 Dec 2019</p>
+                  </div>
+                </div>
+                <div class="blog-text">
+                  <!-- Post Title  -->
+                  <h5 class="weight500 font-size-20 margin-5-0">Show your blog article</h5>
+                  <!-- Post Description  -->
+                  <p class="weight400">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Start of Pricings  -->
+    <section id="pricing" class="bg-light-color pricing">
+      <div class="container">
+        <div class="row">
+          <!-- Feature Title  -->
+          <div class="col-12 features-title blog-title text-center wow fadeInDown">
+            <h5 class="font-size-20">Pricing</h5>
+            <h4>Ours Pricing Comparison</h4>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Pricing Box  -->
+          <div class="col-12 col-md-4">
+            <div class="pricing-box text-center bg-white light-shadow wow fadeInLeftBig">
+              <div class="pricing-head relative">
+                <div class="pricing-border bg-color-pink"></div>
+                <!-- Pricing Feature  -->
+                <p class="weight500 font-size-20">Feature</p>
+                <!-- Pricing Price  -->
+                <p class="weight600">$59.99</p>
+                <p>Yearly</p>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <!-- Pricing Features  -->
+                  <li class="weight500">Feature 01</li>
+                  <li class="weight500">Awesome Feature</li>
+                  <li class="weight500">02 Feature</li>
+                  <li class="weight500">Feature</li>
+                </ul>
+                <!-- Button -->
+                <div class="button-style-color margin-20-0">
+                  <a href="#" class="weight500">Buy Feature</a>
+                </div>
+                <a class="weight500" href="#">Free Trial</a>
+              </div>
+            </div>
+          </div>
+          <!-- Pricing Box  -->
+          <div class="col-12 col-md-4">
+            <div class="pricing-box text-center bg-white light-shadow wow fadeIn" data-wow-delay="0.4s">
+              <div class="pricing-head relative">
+                <div class="pricing-border bg-color-yellow"></div>
+                <!-- Pricing Feature  -->
+                <p class="weight500 font-size-20">Feature</p>
+                <!-- Pricing Price  -->
+                <p class="weight600">$19.99</p>
+                <p>Monthly</p>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <!-- Pricing Features  -->
+                  <li class="weight500">Feature 01</li>
+                  <li class="weight500">Awesome Feature</li>
+                  <li class="weight500">02 Feature</li>
+                  <li class="weight500">Feature</li>
+                </ul>
+                <!-- Button -->
+                <div class="button-style-color margin-20-0">
+                  <a href="#" class="weight500">Buy Feature</a>
+                </div>
+                <a class="weight500" href="#">Free Trial</a>
+              </div>
+            </div>
+          </div>
+          <!-- Pricing Box  -->
+          <div class="col-12 col-md-4">
+            <div class="pricing-box text-center bg-white light-shadow wow fadeInRightBig">
+              <div class="pricing-head relative">
+                <div class="pricing-border bg-secondary-color"></div>
+                <!-- Pricing Feature  -->
+                <p class="weight500 font-size-20">Feature</p>
+                <!-- Pricing Price  -->
+                <p class="weight600">$9.99</p>
+                <p>Monthly</p>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <!-- Pricing Features  -->
+                  <li class="weight500">Feature 01</li>
+                  <li class="weight500">Awesome Feature</li>
+                  <li class="weight500">02 Feature</li>
+                  <li class="weight500">Feature</li>
+                </ul>
+                <!-- Button -->
+                <div class="button-style-color margin-20-0">
+                  <a href="#" class="weight500">Buy Feature</a>
+                </div>
+                <a class="weight500" href="#">Free Trial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Start of Newsletter  -->
+    <section id="contact" class="bg-white newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="newsletter-image">
+              <img class="wow fadeInLeftBig" data-wow-delay="0.4s" src="images/newsletter/newsletter-image1.svg" alt="">
+              <img class="wow fadeInLeftBig" data-wow-delay="0.8s" src="images/newsletter/newsletter-image2.svg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 margin-20-0 newsletter-info wow fadeInRightBig">
+            <h5 class="font-size-20">Newsletter</h5>
+            <h4>Subscribe to Our<br>Weakly Blog.</h4>
+            <div class="input-style margin-20-0 relative">
+              <input class="left color-primary weight500" type="text" placeholder="Enter Your Email Address">
+              <!-- Button -->
+              <div class="button-style-color left margin-15-0 newsletter-button">
+                <a href="#" class="weight500">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Start of Footer  -->
+    <footer class="bg-white footer-basic-style wow fadeIn"> 
+      <div class="container">
+        <div class="row footer-top">
+          <div class="col-12 col-md-3 footer-logo">
+            <!-- logo image -->
+            <a href="#home"><img src="images/logo.svg" alt=""/></a>
+          </div>
+          <div class="col-12 col-sm-3 col-md-2 footer-collumn">
+            <p class="weight500">App</p>
+            <a class="left weight400" href="#">Style#1</a>
+            <a class="left weight400" href="#">Style#2</a>
+            <a class="left weight400" href="#">Style#3</a>
+          </div>
+          <div class="col-12 col-sm-3 col-md-2 footer-collumn">
+            <p class="weight500">Protfolio</p>
+            <a class="left weight400" href="#">Style#1</a>
+            <a class="left weight400" href="#">Style#2</a>
+            <a class="left weight400" href="#">Style#3</a>
+          </div>
+          <div class="col-12 col-sm-3 col-md-2 footer-collumn">
+            <p class="weight500">Services</p>
+            <a class="left weight400" href="#">Services</a>
+            <a class="left weight400" href="#">Pricing</a>
+          </div>
+          <div class="col-12 col-sm-3 col-md-3 footer-collumn">
+            <p class="weight500">Contact Us</p>
+            <p class="left weight400">+00-1234-567</p>
+            <p class="left weight400">somemail@mail.com</p>
+            <p class="left weight400">Country: <br>Uzbekistan</p>
+          </div>
+        </div>
+        <div class="row footer-bottom">
+          <div class="col-12 col-sm-6 footer-copyright">
+            <p class="left weight400 padding-top-15 ">© 2023 - Bondi</p>
+          </div>
+          <div class="col-12 col-sm-6 footer-social">
+            <a class="right weight400" href="#"><span><i class="fab fa-dribbble padding-top-15 font-size-20"></i></span></a>
+            <a class="right weight400" href="#"><span><i class="fab fa-twitter padding-top-15 font-size-20"></i></span></a>
+            <a class="right weight400" href="#"><span><i class="fab fa-facebook-f padding-top-15 font-size-20"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Scripts Ends -->
+  </body>
+</html>
